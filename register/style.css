@@ -1,0 +1,54 @@
+nav {
+  border-bottom: 1px solid black;
+}
+
+.crumbs ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.crumb {
+  display: inline-block;
+}
+
+.crumb a::after {
+  display: inline-block;
+  color: #000;
+  content: '>';
+  font-size: 80%;
+  font-weight: bold;
+  padding: 0 3px;
+}
+
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #45a1ff;
+  color: #fff;
+  margin-top: 10px;
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+}
+
+.container {
+
+  width: 180px;
+  border-radius: 10px;
+  margin: 0 auto; /* Горизонтальное центрирование */
+  border: 2px solid #45a1ff; /* Толщина, стиль и цвет рамки */
+  padding: 20px; /* Отступы внутри формы */
+  margin-top: 5%;
+
+}
+
+
