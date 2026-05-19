@@ -1,0 +1,23 @@
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #45a1ff;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.form_main {
+    width: 30%;
+    margin-left: 880px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
