@@ -21,3 +21,27 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+a {
+  margin-left: 10px;
+}
+
+.table_main {
+  text-align: center;
+  width: 50%;
+  position: relative;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.formrr {
+  width: 20%;
+  position: relative;
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid #45a1ff;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}

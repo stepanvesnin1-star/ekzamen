@@ -45,18 +45,19 @@
   </div>
 </nav>
 
-    <h1>На этой странице вы можете увидеть оставленные заявки</h1>
-    <p>Ниже в таблице все ваши активные заявки</p>
+    <h1>Админ-панель</h1>
+    <p>Ниже в таблице все активные заявки</p>
 
     <div class="table_main">
-<table class="table">
+<table class="table table-bordered border-primary">
   <thead>
     <tr>
-      <th scope="col">#</th>
+      <th scope="col">ID</th>
       <th scope="col">Наименование курса</th>
       <th scope="col">Дата начала обучения</th>
       <th scope="col">Способ оплаты</th>
       <th scope="col">Статус одобрения заявки</th>
+      <th scope="col">Сменить статус</th>
     </tr>
   </thead>
   <tbody>
@@ -65,7 +66,8 @@
       <td>IT Бизнес</td>
       <td>26.05.2026</td>
       <td>Наличными</td>
-      <td>Одобрено</td>
+      <td>Новая</td>
+      <td><button type="button" class="btn btn-success">Идет обучение</button><button type="button" class="btn btn-dark">Обучение завершено</button></td>
     </tr>
     <tr>
       <th scope="row">2</th>
@@ -73,6 +75,7 @@
       <td>20.05.2026</td>
       <td>Наличными</td>
       <td>Отказано</td>
+      <td><button type="button" class="btn btn-success">Идет обучение</button><button type="button" class="btn btn-dark">Обучение завершено</button></td>
     </tr>
     <tr>
       <th scope="row">3</th>
@@ -80,31 +83,31 @@
       <td>30.05.2026</td>
       <td>Переводом</td>
       <td>Одобрено</td>
+      <td><button type="button" class="btn btn-success">Идет обучение</button><button type="button" class="btn btn-dark">Обучение завершено</button></td>
     </tr>
   </tbody>
 </table>
     </div>
     <div class="formrr">
-      <h5>Пожалуйста оставьте отзыв о качестве образовательных услуг.</h5>
+      <h5>Отправить уведемлоние пользователю.</h5>
       <form>
 <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email адрес</label>
+  <label for="exampleFormControlInput1" class="form-label">Email адрес пользователя</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@mail.ru">
 </div>
 <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Расскажите про ваше обучение ниже</label>
+  <label for="exampleFormControlTextarea1" class="form-label">Отправляемая информация</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
     <div class="mb-3">
-      <label for="disabledSelect" class="form-label">Оставьте оценку о качестве оказанных услуг</label>
+      <label for="disabledSelect" class="form-label">Отправить</label>
       <select id="disabledSelect" class="form-select">
-        <option>Отлично</option>
-        <option>Хорошо</option>
-        <option>Удовлетворительно</option>
+        <option>По e-mail</option>
+        <option>Уведомление на сайте</option>
       </select>
     </div>
+    <button type="button" class="btn btn-primary">Отправить</button>
       </form>
-      <button type="button" class="btn btn-primary">Отправить отзыв</button>
     </div>
       <footer>
     <p>© 2018 Gandalf</p>
